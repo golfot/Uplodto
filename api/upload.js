@@ -5,7 +5,7 @@ const FormData = require('form-data');
 const ACCESS_TOKEN = 'TkMdBVZuYY97ZDcRhn7dTET4Yo6P3N4OlNJSbwpjy';
 
 // Gantilah dengan folderid yang valid dari PCloud kamu
-const FOLDER_ID = '0';
+const FOLDER_ID = '0'; // Misalnya, root folder
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
@@ -22,11 +22,11 @@ module.exports = async (req, res) => {
 
     // Buat form data untuk upload file
     const form = new FormData();
-    form.append('filename', fileName);
     form.append('file', Buffer.from(fileBuffer, 'base64'), { filename: fileName });
+    form.append('folderid', FOLDER_ID);
 
-    // URL API PCloud dengan folderid yang sudah ditentukan
-    const apiUrl = `https://api.pcloud.com/uploadfile?auth=${ACCESS_TOKEN}&folderid=${FOLDER_ID}`;
+    // URL API PCloud dengan token akses sebagai parameter query string
+    const apiUrl = `https://api.pcloud.com/uploadfile?auth=${ACCESS_TOKEN}`;
 
     // Kirim request POST ke PCloud API untuk upload file
     const response = await fetch(apiUrl, {
