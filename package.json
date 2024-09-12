@@ -1,15 +1,15 @@
 {
-  "name": "pcloud-upload",
+  "name": "upload-to-pcloud",
   "version": "1.0.0",
-  "description": "Upload files to PCloud using Node.js and Vercel",
-  "main": "api/upload.js",
+  "description": "A Node.js application to upload files to PCloud",
+  "main": "upload.js",
   "scripts": {
-    "start": "vercel dev"
+    "start": "node upload.js"
   },
   "dependencies": {
-    "form-data": "^4.0.0",
-    "node-fetch": "^2.6.7"
+    "node-fetch": "^3.2.0",
+    "form-data": "^4.0.0"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Your Name",
+  "license": "MIT"
 }
