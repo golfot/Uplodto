@@ -2,7 +2,7 @@ const fetch = require('node-fetch');
 const FormData = require('form-data');
 
 // Gantilah dengan PCloud access token kamu
-const ACCESS_TOKEN = 'TkMdBVZuYY97ZDcRhn7dTET4Yo6P3N4OlNJSbwpjy';
+const ACCESS_TOKEN = '9wusDVZuYY97ZlsS0b4s7V1BC4THYY4rGKuNHODQ7';
 
 module.exports = async (req, res) => {
   if (req.method !== 'POST') {
