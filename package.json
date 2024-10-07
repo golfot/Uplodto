@@ -1,15 +1,17 @@
 {
-  "name": "upload-to-pcloud",
+  "name": "kiflixs",
   "version": "1.0.0",
-  "description": "A Node.js application to upload files to PCloud",
-  "main": "upload.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "start": "node upload.js"
+    "start": "node index.js"
   },
   "dependencies": {
-    "node-fetch": "^3.2.0",
+    "jsdom": "^20.0.0",
+    "node-fetch": "^2.6.1",
+    "cors": "^2.8.5",
     "form-data": "^4.0.0"
   },
-  "author": "Your Name",
-  "license": "MIT"
+  "author": "kie",
+  "license": "ISC"
 }
