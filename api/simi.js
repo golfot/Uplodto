@@ -1,6 +1,11 @@
 const fetch = require('node-fetch');
 
 module.exports = async (req, res) => {
+    // Mengatur header CORS
+    res.setHeader('Access-Control-Allow-Origin', '*'); // Mengizinkan semua origin
+    res.setHeader('Access-Control-Allow-Methods', 'POST'); // Mengizinkan metode POST
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Accept'); // Mengizinkan header tertentu
+
     if (req.method !== 'POST') {
         return res.status(405).json({ error: 'Method not allowed' });
     }
