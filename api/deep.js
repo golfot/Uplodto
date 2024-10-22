@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 // Fungsi untuk membuat email acak
 function generateRandomEmail() {
   const randomStr = Math.random().toString(36).substring(2, 10);
-  return `user${randomStr}@example.com`;
+  return `user${randomStr}@sayurals.com`;
 }
 
 // Fungsi untuk melakukan pendaftaran
