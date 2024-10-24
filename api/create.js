@@ -17,7 +17,7 @@ module.exports = async (req, res) => {
   try {
     // Load template and pas photo
     const templatePath = path.join(__dirname, '../public/Template.png');
-    const photoPath = path.join(__dirname, '../public/photo.jpg');
+    const photoPath = path.join(__dirname, '../public/bronya(1).jpg');
     
     const template = await loadImage(templatePath);
     const pasPhoto = await loadImage(photoPath);
