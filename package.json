@@ -1,12 +1,15 @@
 {
   "name": "kiflixs",
   "version": "1.0.0",
-  "description": "",
+  "description": "E-KTP Generator API",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
   "dependencies": {
+    "canvas": "^2.9.0",      // Canvas untuk manipulasi gambar
+    "fs-extra": "^10.0.0",    // fs-extra untuk penanganan file
+    "express": "^4.17.1",     // Express untuk server
     "jsdom": "^20.0.0",
     "node-fetch": "^2.6.1",
     "cors": "^2.8.5",
